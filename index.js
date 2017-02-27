@@ -1,4 +1,9 @@
-function setText(selector, text) {
+function setText(selector, text) { 
+
+	var element = document.querySelector(selector);
+	element.InertText = text;
+
+
 	/*
 		`selector` is string with CSS-like selector
 		`text` - is just string with text we want to change
@@ -10,8 +15,13 @@ function setText(selector, text) {
 
 function setTextAll(selector, text) {
 	// Write your code here
+
+	var arrayElements = document.querySelectorAll(selector);
+	arrayElements.forEach(function(elemente) {
+          setText(selector, text);
+		});
 }
 
 
-setText("p", "wasn't that hard, yeah ?");
-setTextAll("div .block a", "or was it ?");
+setText("p", "change text for all");
+setTextAll("p", "changed from setText");
