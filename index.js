@@ -23,5 +23,5 @@ function setTextAll(selector, text) {
 }
 
 
-setText("p", "change text for all");
+setText("p", "change text for all");           ?????
 setTextAll("p", "changed from setText");
