@@ -9,12 +9,10 @@ function setText(selector, text) {
 		`text` - is just string with text we want to change
 	*/
 
-	// Write your code here
 }
 
-
 function setTextAll(selector, text) {
-	// Write your code here
+	
 
 	var arrayElements = document.querySelectorAll(selector);
 	arrayElements.forEach(function(elemente) {
@@ -23,5 +21,5 @@ function setTextAll(selector, text) {
 }
 
 
-setText("p", "change text for all");           ?????
+setText("p", "change text for all");       
 setTextAll("p", "changed from setText");
