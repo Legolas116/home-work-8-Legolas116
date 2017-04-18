@@ -1,7 +1,7 @@
 function setText(selector, text) { 
 
 	var element = document.querySelector(selector);
-	element.InertText = text;
+	element.innerText = text;
 
 
 	/*
@@ -12,14 +12,12 @@ function setText(selector, text) {
 }
 
 function setTextAll(selector, text) {
-	
-
 	var arrayElements = document.querySelectorAll(selector);
-	arrayElements.forEach(function(elemente) {
+	arrayElements.forEach(function(element) {
           setText(selector, text);
 		});
 }
 
 
-setText("p", "change text for all");       
-setTextAll("p", "changed from setText");
+setText("a", "New");       
+setTextAll("p", "changed Text");
