@@ -21,3 +21,6 @@ function setTextAll(selector, text) {
 
 setText("a", "New");       
 setTextAll("p", "changed Text");
+
+
+
